@@ -4,25 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My coffee</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&display=swap"
-      rel="stylesheet"
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/My-coffee.png"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&family=Gabriela&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="main-header">
@@ -41,7 +29,7 @@
           </nav>
           <div class="header-button">
             <a class="button_singup" href="#">Зареєструватися</a>
-            <button class="button-enter">Увійти</button>
+            <button class="button-enter" type="button">Увійти</button>
           </div>
         </div>
       </div>
@@ -56,29 +44,146 @@
             найкращі смаки кави, які ви коли-небудь куштували. Ми пропонуємо
             найкраще для наших клієнтів.
           </p>
-          <button class="order-now">Замовити зараз</button>
+          <button class="order-now" type="button">Замовити зараз</button>
         </div>
       </section>
       <section class="about-us">
         <div class="container">
           <div class="about-section">
             <div>
-              <h2>Відкрийте для себе найкращу каву</h2>
-              <p>
+              <h2 class="about-title">Відкрийте для себе найкращу каву</h2>
+              <p class="about-text">
                 <span>Bean Scene</span> — це кав’ярня, яка пропонує якісну каву,
                 що підвищує вашу продуктивність і покращує настрій. Випити чашку
                 кави — це добре, але випити чашку справжньої кави — ще краще.
                 Без сумніву, ця кава сподобається вам більше, ніж будь-яка інша,
                 яку ви коли-небудь куштували.
               </p>
-              <button>Дізнатися більше</button>
+              <button class="button-about" type="button">
+                Дізнатися більше
+              </button>
             </div>
-            <img src="./images/coffe-cup.png" alt="coffee cup" />
+            <img
+              class="images-about"
+              src="./images/coffe-cup.png"
+              alt="coffee cup"
+            />
           </div>
         </div>
       </section>
-      <section></section>
-      <section></section>
+      <section class="menu-section">
+        <div class="container">
+          <div class="item-menu">
+            <img
+              class="menu-image"
+              src="./images/coffee_blast.png"
+              alt="Coffee blast"
+            />
+            <h2 class="menu-title">
+              Насолоджуйтесь новим поєднанням кавових смаків
+            </h2>
+            <p class="menu-text">
+              Відкрийте для себе всі смаки кави разом з нами. Завжди є нова
+              чашка, яку варто спробувати.
+            </p>
+          </div>
+          <div class="conteiner-card">
+            <div class="card-menu">
+              <div class="coffee-card">
+                <img
+                  class="image-card"
+                  src="./images/coffee-cappuccino.jpg"
+                  alt="Cappuccino"
+                />
+                <h3 class="card-title">Cappuccino</h3>
+                <p class="name-card">Кава 50% | Молоко 50%</p>
+                <p class="price-card">40.50 грн.</p>
+                <div class="button-menu">
+                  <button class="button-card" type="button">Замовити</button>
+                </div>
+              </div>
+              <div class="coffee-card">
+                <img
+                  class="image-card"
+                  src="./images/chai-latte.png"
+                  alt="Latte"
+                />
+                <h3 class="card-title">Chai Latte</h3>
+                <p class="name-card">Кава 50% | Молоко 50%</p>
+                <p class="price-card">40.50 грн.</p>
+                <div class="button-menu">
+                  <button class="button-card" type="button">Замовити</button>
+                </div>
+              </div>
+              <div class="coffee-card">
+                <img
+                  class="image-card"
+                  src="./images/Macchiato.jpg"
+                  alt="Macchiato"
+                />
+                <h3 class="card-title">Macchiato</h3>
+                <p class="name-card">Кава 50% | Молоко 50%</p>
+                <p class="price-card">40.50 грн.</p>
+                <div class="button-menu">
+                  <button class="button-card" type="button">Замовити</button>
+                </div>
+              </div>
+              <div class="coffee-card">
+                <img
+                  class="image-card"
+                  src="./images/Expresso.jpg"
+                  alt="Cappuccino"
+                />
+                <h3 class="card-title">Cappuccino</h3>
+                <p class="name-card">Кава 50% | Молоко 50%</p>
+                <p class="price-card">40.50 грн.</p>
+                <div class="button-menu">
+                  <button class="button-card" type="button">Замовити</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="advantages">
+        <div class="container">
+          <div class="advantages-title">
+            <h2 class="adv-title">Чому ми інші?</h2>
+            <p class="adv-text">
+              Ми не просто готуємо вашу каву, ми робимо ваш день приємнішим!
+            </p>
+          </div>
+          <div class="advantages-card">
+            <div class="adv-card">
+              <img src="" alt="" />
+              <h3>Найкращі зерна</h3>
+              <p>Зерна, що забезпечують чудовий смак</p>
+            </div>
+            <div class="adv-card">
+              <img src="" alt="" />
+              <h3>Висока якість</h3>
+              <p>Ми забезпечуємо найвищу якість</p>
+            </div>
+            <div class="adv-card">
+              <img src="" alt="" />
+              <h3>Супер смак</h3>
+              <p>Кава, яку ви ще ніколи не куштували</p>
+            </div>
+            <div class="adv-card">
+              <img src="" alt="" />
+              <h3>Доступна ціна</h3>
+              <p>Наші ціни на каву легко доступні</p>
+            </div>
+          </div>
+          <div class="advantages-end">
+            <p class="adv-text">
+              Чудові ідеї починаються з чудової кави. Давайте допоможемо вам
+              цього досягти.
+            </p>
+            <p>Почніть уже сьогодні.</p>
+          </div>
+        </div>
+      </section>
       <section></section>
       <section></section>
       <section></section>

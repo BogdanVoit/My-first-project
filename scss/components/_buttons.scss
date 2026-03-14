@@ -1,0 +1,39 @@
+.header-button .button-enter {
+    font-family: "Cormorant Infant";
+    font-weight: bold;
+    font-size: 19px;
+    padding: 11px 23px;
+    color: black;
+    background-color: #f9c06a;
+    border: 2px solid #f9c06a;
+    border-radius: 24px;
+}
+
+.button-enter:hover {
+    border-color: #c4a712;
+    background-color: #c4a712;
+}
+
+.button_singup {
+    font-family: "Gabriela", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--standart-color-site);
+}
+
+.button_singup:hover {
+    color: #c4a712;
+    font-weight: 800;
+}
+
+.button-about {
+    font-family: "Cormorant Infant";
+        font-weight: bold;
+        font-size: 19px;
+        padding: 11px 23px;
+        color: black;
+        background-color: #f9c06a;
+        border: 2px solid #f9c06a;
+        border-radius: 24px;
+}
+
