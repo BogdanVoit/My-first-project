@@ -1,320 +1,628 @@
-@import './base';
-@import './components/links';
-@import './components/buttons';
-@import './utils/fonts';
-
+@import "./base";
+@import "./components/links";
+@import "./components/buttons";
+@import "./utils/fonts";
 
 /* header */
 .main-header {
-    background-color: #000000c9;
-    position: absolute;
-    left: 0;
-    right: 0;
+  background-color: #000000c9;
+  position: absolute;
+  left: 0;
+  right: 0;
 }
 
 .header-container {
-    display: flex;
-    align-items: center;    
-    border-bottom-left-radius: 24px;
-    border-bottom-right-radius: 24px;
-    padding: 10px 0;
-    font-size: 15px;
-    gap: 24px;
+  display: flex;
+  align-items: center;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  padding: 10px 0;
+  font-size: 15px;
+  gap: 24px;
 }
 
 .heder-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-    padding: 0 24px;
-    margin: 0;
-    gap: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  padding: 0 24px;
+  margin: 0;
+  gap: 24px;
 }
 
 .header-nav {
-    display: flex;
-    flex-grow: 1;
-    gap: 24px;
+  display: flex;
+  flex-grow: 1;
+  gap: 24px;
 }
 
 .header-button {
-    display: flex;
-    align-items: center;
-    gap: 24px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
 }
-
-
 
 /* hero-section  */
 
 .hero-section {
-    padding-top: 117px;
-    padding-bottom: 48px;
-    background-image:
-        linear-gradient(203deg,
-            rgba(0, 0, 0, 0.79) 0%,
-            rgba(0, 0, 0, 0.37) 53%,
-            rgba(0, 0, 0, 0.8) 100%),
-        url(../images/coffee_image.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  padding-top: 117px;
+  padding-bottom: 48px;
+  background-image:
+    linear-gradient(
+      203deg,
+      rgba(0, 0, 0, 0.79) 0%,
+      rgba(0, 0, 0, 0.37) 53%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url(../images/coffee_image.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-title {
-    font-family: "Clicker Script", cursive;
-    font-weight: 400;
-    font-style: normal;
-    color: var(--standart-color-site);
-    font-size: 220px;
+  font-family: "Clicker Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--standart-color-site);
+  font-size: 220px;
 }
 
 .item-hero {
-    font-family: "Cormorant Infant", serif;
-    font-style: italic;
-    font-weight: 400;
-    color: var(--standart-color-site);
-    font-size: 32px;
+  font-family: "Cormorant Infant", serif;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--standart-color-site);
+  font-size: 32px;
 }
 
 .item-hero,
 .hero-title {
-    margin-bottom: 11px;
+  margin-bottom: 11px;
 }
 
 .hero-text {
-    font-family: "Cormorant Infant", serif;
-    font-style: italic;
-    font-weight: 600;
-    color: var(--standart-color-site);
-    font-size: 24px;
-    margin-bottom: 56px;
-    max-width: 603px;
-    width: 100%;
+  font-family: "Cormorant Infant", serif;
+  font-style: italic;
+  font-weight: 600;
+  color: var(--standart-color-site);
+  font-size: 24px;
+  margin-bottom: 56px;
+  max-width: 603px;
+  width: 100%;
 }
 
 .order-now {
-    font-family: "Cormorant Infant";
-    font-weight: bold;
-    font-size: 19px;
-    padding: 11px 23px;
-    color: black;
-    background-color: #f9c06a;
-    border: 2px solid #f9c06a;
-    border-radius: 24px;
+  font-family: "Cormorant Infant";
+  font-weight: bold;
+  font-size: 19px;
+  padding: 11px 23px;
+  color: black;
+  background-color: #f9c06a;
+  border: 2px solid #f9c06a;
+  border-radius: 24px;
 }
 
 .order-now:hover {
-    border-color: #c4a712;
-    background-color: #c4a712;
+  border-color: #c4a712;
+  background-color: #c4a712;
 }
 
 /* about-us section */
 
 .about-section {
-    display: flex;    
-    gap: 95px;
-    padding-bottom: 48px;
-    align-items: center;
+  display: flex;
+  gap: 95px;
+  padding-bottom: 48px;
+  align-items: center;
 }
 
 .about-title {
-    padding-top: 48px;
-    margin-bottom: 43px;
-    color: #603809;
-    font-family: 'Cormorant Infant';
-    font-style: normal;
-    font-size: 54px;
-    font-weight: 600;
+  padding-top: 48px;
+  margin-bottom: 43px;
+  color: #603809;
+  font-family: "Cormorant Infant";
+  font-style: normal;
+  font-size: 54px;
+  font-weight: 600;
 }
 
-.about-text {   
-    margin-bottom: 29px; 
-    line-height: 1.5;
-    font-size: 20px;
-    font-family: 'Playfair Display';
-    color: #707070;
+.about-text {
+  margin-bottom: 29px;
+  line-height: 1.5;
+  font-size: 20px;
+  font-family: "Playfair Display";
+  color: #707070;
 }
 
-
-
-// menu section 
+// menu section
 
 .menu-section {
-    position: relative;    
+  position: relative;
 }
 
-.menu-title {     
-    color: #603809;
-    font-family: 'Cormorant Infant';
-    font-style: normal;
-    font-size: 54px;
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 40px;
-    max-width: 723px;
-    width: 100%;
-    
-
+.menu-title {
+  color: #603809;
+  font-family: "Cormorant Infant";
+  font-style: normal;
+  font-size: 54px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 40px;
+  max-width: 723px;
+  width: 100%;
 }
 
 .menu-text {
-font-size: 20px;
-font-family: 'Playfair Display';
-color: #707070;
-margin-bottom: 32px;
+  font-size: 20px;
+  font-family: "Playfair Display";
+  color: #707070;
+  margin-bottom: 32px;
 }
 
-.item-menu {    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
+.item-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu-image {
-    position: absolute;
-    left: 0;
-    top: -145px;
+  position: absolute;
+  left: 0;
+  top: -145px;
 }
 
 // pirice card
 .card-menu {
-    display: flex;
-    gap: 20px;
-    position: relative;    
-    padding: 0px;
+  display: flex;
+  gap: 20px;
+  position: relative;
+  padding: 0px;
 }
 
 .conteiner-card {
-    padding-bottom: 106px;
+  padding-bottom: 106px;
 }
 
-.coffee-card {   
-    position: relative; 
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    background-color: rgba(255, 249, 241);
-    border: 1px solid rgba(249, 192, 106, 0.281);      
-    max-width: 280px;
-    width: 100%; 
-    height: 388px;
+.coffee-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  background-color: rgba(255, 249, 241);
+  border: 1px solid rgba(249, 192, 106, 0.281);
+  max-width: 280px;
+  width: 100%;
+  height: 388px;
 }
 
 .card-title,
 .price-card {
-    color:#603809 ;
-    text-align: center;
-    font-family: 'Playfair Display';
-    font-weight: 600;  
-    -webkit-text-stroke: 1px #e7c999;
-    paint-order: stroke fill;
+  color: #603809;
+  text-align: center;
+  font-family: "Playfair Display";
+  font-weight: 600;
+  -webkit-text-stroke: 1px #e7c999;
+  paint-order: stroke fill;
 }
 
 .price-card {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .image-card {
-    width: 100%;
-    height: auto;
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
+  width: 100%;
+  height: auto;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
-
 .name-card {
-    text-align: center;
-    font-family: 'Playfair Display';
-    -webkit-text-stroke: 1px #e7c999;
-    paint-order: stroke fill;    
+  text-align: center;
+  font-family: "Playfair Display";
+  -webkit-text-stroke: 1px #e7c999;
+  paint-order: stroke fill;
 }
 
 .button-card {
-    position: absolute;
-    top: 362px;
-    left: 74px;
-    font-family: "Cormorant Infant";
-    font-weight: bold;
-    font-size: 19px;
-    padding: 11px 23px;
-    color: black;
-    background-color: #f9c06a;
-    border: 2px solid #f9c06a;
-    border-radius: 24px;
+  position: absolute;
+  top: 362px;
+  left: 74px;
+  font-family: "Cormorant Infant";
+  font-weight: bold;
+  font-size: 19px;
+  padding: 11px 23px;
+  color: black;
+  background-color: #f9c06a;
+  border: 2px solid #f9c06a;
+  border-radius: 24px;
 }
 
 .button-menu {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 // advantages
 .adv-title {
-    font-size: 54px;
-    font-family: "Cormorant Infant";
-    text-align: center;
-    color: #603809;
-    margin-bottom: 23px;    
+  font-size: 54px;
+  font-family: "Cormorant Infant";
+  text-align: center;
+  color: #603809;
+  margin-bottom: 23px;
 }
 
 .adv-text {
-    font-family: "Playfair Display";
-    font-size: 20px;
-    color:#707070;
-    text-align: center;
-    margin: 0;
+  font-family: "Playfair Display";
+  font-size: 20px;
+  color: #707070;
+  text-align: center;
+  margin: 0;
 }
 
 .advantages-end p:last-child {
-    color: #603809;
-    font-family: "Playfair Display";
-    font-size: 30px;
-    font-weight: 600;
-    text-align: center;
+  color: #603809;
+  font-family: "Playfair Display";
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
 }
 
 .advantages-card {
-    display: flex;
-    gap: 20px;
-    padding: 32px 23px;
+  display: flex;
+  gap: 20px;
+  padding: 32px 0;
 }
 
 .advantages-card .adv-card:first-child {
-    background-color: #FFEED8;
+  background-color: #ffeed8;
 }
 
 .adv-card:not(:first-child) {
-    background-color: #FFF9F1;
-    border: 1px solid rgba(249, 192, 106, .281);
+  background-color: #fff9f1;
+  border: 1px solid rgba(249, 192, 106, 0.281);
 }
 
 .adv-card h3 {
-    color: #603809;
-    font-size: 36px;
-    font-family: "Cormorant Infant";
-    text-align: center;
-    margin-bottom: 14px;
+  color: #603809;
+  font-size: 36px;
+  font-family: "Cormorant Infant";
+  text-align: center;
+  margin-bottom: 14px;
 }
 
 .adv-card p {
-    color: #707070;
-    font-size: 20px;
-    font-family: "Playfair Display";
-    text-align: center;
-    font-size: 20px;
-    margin: 0;
+  color: #707070;
+  font-size: 20px;
+  font-family: "Playfair Display";
+  text-align: center;
+  font-size: 20px;
+  margin: 0;
 }
 
 .adv-card {
-    padding: 35px 11px;
-    max-width: 284px;
-    width: 100%;
+  padding: 35px 11px;
+  max-width: 284px;
+  width: 100%;
 }
 
+.advantages-end {
+  margin: 0;
+  padding-bottom: 32px;
+}
 
+.adv-button {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 11px 23px;
+  border-radius: 24px;
+  font-family: "Cormorant Infant";
+  font-weight: bold;
+  font-size: 19px;
+  color: black;
+  background-color: #f9c06a;
+  border: 2px solid #f9c06a;
+}
 
+.advantages {
+  position: relative;
+  padding-bottom: 74px;
+}
+
+.adv-image {
+  position: absolute;
+  right: 0;
+  top: -115px;
+}
+
+// morning section
+
+.morning {
+  padding-bottom: 82px;
+}
+
+.container-morning {
+  position: relative;
+  background-image:
+    linear-gradient(#603809c7), url(..//images/morning-background.jpg);
+  background-position: top left;
+  background-size: cover;
+}
+
+.morning-title {
+  display: block;
+  padding: 154px 0;
+  padding-left: 80px;
+  width: 100%;
+  max-width: 723px;
+}
+
+.morning-title h2 {
+  color: white;
+  font-size: 54px;
+  font-family: "Cormorant Infant";
+  margin-bottom: 14px;
+}
+
+.morning-title p {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 56px;
+}
+
+.morning-button {
+  text-align: center;
+  padding: 11px 23px;
+  border-radius: 24px;
+  font-family: "Cormorant Infant";
+  font-weight: bold;
+  font-size: 19px;
+  color: black;
+  background-color: #f9c06a;
+  border: 2px solid #f9c06a;
+}
+
+.img-cup {
+  position: absolute;
+  right: 89px;
+  top: 40px;
+  z-index: 1;
+}
+
+.img-bean {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+// reviews section
+.reviews {
+  padding-bottom: 200px;
+}
+
+.rev-title {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #603809;
+  font-family: "Cormorant Infant";
+  font-style: normal;
+  font-size: 54px;
+  font-weight: 600;
+}
+
+.rev-subtitle {
+  text-align: center;
+  font-size: 20px;
+  color: #707070;
+  margin-bottom: 45px;
+}
+.rev-container {
+  position: relative;
+  background-color: #fff9f1;
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 129px 100px;
+  padding-bottom: 83px;
+  border: 1px solid rgba(249, 192, 106, 0.281);
+}
+
+.rev-text {
+  font-size: 18px;
+  width: 100%;
+  max-width: 780px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+  line-height: 1.5;
+}
+
+.rev-btn {
+  position: absolute;
+  padding: 33px;
+  border: none;
+  background-color: #f9c06a;
+  border-radius: 16px;
+}
+
+.left {
+  transform: rotate(180deg);
+  left: -42px;
+  top: 174px;
+}
+
+.right {
+  right: -42px;
+  top: 174px;
+}
+
+.image-reviews {
+  position: absolute;
+  bottom: -55px;
+  left: 438px;
+  border-radius: 16px;
+  width: 110px;
+  height: 110px;
+  background-image: url(../images/anatoliu.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -25px;
+}
+
+.rev-name {
+  text-align: center;
+  color: #603809;
+  font-style: normal;
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.rev-icon {
+  fill: #603809;
+  width: 24px;
+  height: 24px;
+}
+
+.depart {
+  font-size: 20px;
+}
+
+.standart-text {
+  color: #707070;
+  text-align: center;
+}
+
+// subscribe-newsletter
+.sub-container {
+  padding: 88px 193px;
+}
+
+.sub-title {
+  text-align: center;
+  margin-bottom: 16px;
+  color: white;
+  font-family: "Cormorant Infant";
+  font-style: normal;
+  font-size: 54px;
+  font-weight: 600;
+}
+
+.sub-subtitle {
+  text-align: center;
+  font-family: "Playfair Display";
+  font-size: 20px;
+  color: white;
+  margin-bottom: 19px;
+}
+
+.subscribe-newsletter {
+  position: relative;
+  width: 100%;
+  height: 374px;
+  background-image:
+    linear-gradient(rgba(96, 56, 9, 0.7803921569)), url(../images/subscribe.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img-bgr {
+  position: absolute;
+}
+
+.img-bgr.lef {
+  top: 120px;
+  left: 0;
+  z-index: 1;
+}
+
+.img-bgr.righ {
+  top: 120px;
+  right: 0;
+  z-index: 1;
+}
+
+.sub-input {
+  display: flex;
+  justify-content: center;
+}
+
+.sub-enter {
+  width: 474px;
+  background-color: #fff9f1;
+  padding: 16px 111px;
+  border-radius: 5px 0px 0px 5px;
+  border: 0.5px solid rgba(249, 192, 106, 0.281);
+}
+
+.sub-enter::placeholder {
+  color: rgba(0, 0, 0, 0.34);
+  font-size: 16px;
+}
+.sub-enter:focus {
+  outline: none;
+}
+
+.sub-button {
+  color: #603809;
+  font-family: "Cormorant Infant";
+  font-weight: bold;
+  font-size: 19px;
+  padding: 16px;
+  border: none;
+  background-color: #f9c06a;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.sub-button:hover {
+  background-color: #c4a712;
+  color: black;
+}
+
+//footer
+.footer {
+  background-color: #442808;
+  position: relative;
+}
+.footer-container {
+  padding: 162px 20px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  margin-bottom: 50px;
+}
+
+.footer-text {
+  font-family: "Playfair Display";
+  color: white;
+  width: 100%;
+  max-width: 380px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-title {
+  color: white;
+  margin-bottom: 55px;
+  font-style: normal;
+  font-size: 26px;
+}
+.foter-list.foot-link {
+  line-height: 1.5;
+}
+
+.foter-list {
+  text-decoration: none;
+  font-size: 16px;
+  text-decoration: none;
+  line-height: 2.6;
+  font-family: "Gabriela", serif;
+  color: white;
+}

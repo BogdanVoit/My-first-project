@@ -1,13 +1,13 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
+  margin: 0;
 }
 
 :root {
-    --standart-color-site: white;
+  --standart-color-site: white;
 }
 
 h1,
@@ -17,23 +17,26 @@ h4,
 h5,
 h6,
 p {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 a {
-    display: inline-block;
+  color: inherit;
+  display: inline-block;
+  text-decoration: none;
 }
 
 ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    width: 100%;
+  font-style: normal;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
 }
 
 .container {
-    width: 100%;
-    max-width: 1228px;
-    margin: 0 auto;
-    padding: 0 24px;
+  width: 100%;
+  max-width: 1228px;
+  margin: 0 auto;
+  padding: 0 24px;
 }
